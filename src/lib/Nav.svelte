@@ -40,7 +40,7 @@
     opacity: 0.7;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 820px) {
     .nav-container {
       flex-direction: column;
     }
