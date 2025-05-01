@@ -62,19 +62,19 @@ p {
     transform: translateY(-50%);
 }
 
-.link-left {
+.link-left, .back-link {
     left: calc(50% - 220px);
-}
-
-.link-right {
-    right: calc(50% - 220px);
 }
 
 .back-link {
     left: calc(50% - 422px);
 }
 
-@media (max-width: 768px) {
+.link-right {
+    right: calc(50% - 220px);
+}
+
+@media (max-width: 888px) {
     .link-left, .link-right, .back-link {
         left: 50%;
         transform: translateX(-50%);
@@ -87,9 +87,7 @@ p {
     .link-right {
         top: calc(50% + 200px);
     }
-}
 
-@media (max-width: 888px) {
     .projects .link,
     .contact .link {
         color: white;
