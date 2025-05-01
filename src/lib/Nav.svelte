@@ -43,10 +43,5 @@
     .nav-container {
       flex-direction: column;
     }
-    /* a {
-         left: 50%;
-        top: calc(50% - 220px);
-        transform: translateX(-50%);
-    } */
   }
 </style>
