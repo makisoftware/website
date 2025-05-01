@@ -77,7 +77,7 @@ p {
 }
 
 @media (max-width: 888px) {
-    .link-left, .link-right, .back-link {
+    .back-link {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -85,11 +85,7 @@ p {
     .link-left, .back-link {
         top: calc(50% - 400px);
     }
-
-    .link-right {
-        top: calc(50% + 200px);
-    }
-
+ 
     .projects .link,
     .contact .link {
         color: white;
