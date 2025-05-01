@@ -6,8 +6,9 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"prebuild": "cp .nojekyll CNAME build/",
 		"deploy": "gh-pages -d build -t",
-		"pages": "npm run build && npm run deploy"
+		"pages": "npm run build && npm run prebuild && npm run deploy"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
