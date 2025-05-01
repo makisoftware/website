@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    pointer-events: none;
   }
 
   a {
@@ -33,6 +33,7 @@
     font-size: 1.2em;
     transition: opacity 0.3s ease;
     text-align: center;
+    pointer-events: auto;
   }
 
   a:hover {

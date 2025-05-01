@@ -1,6 +1,15 @@
-<h1>Projects</h1>
-<p>
-    A new project is in development. <a href="contact">Reach out</a> to be added to the testflight.
-    <br/><br/>
-    <a href="https://t4t.social">t4t</a> is a focused social network for trans and gender-non-comforming people. It is beautiful, minimalist, text-based, and free. It is the largest network of its kind.
-</p>
+<script>
+
+    import Project from "$lib/Project.svelte";
+
+</script>
+<div class="level-two-container">
+    <div class="level-two-text-area">
+        <h1>Projects</h1>
+        <Project link="https://t4t.social" imagePath="/t4t.png" title="t4t" description="Social network for trans and gender-non-comforming people" />
+        <Project link="https://pingpractice.org/" imagePath="/practice.png" title="Ping Practice" description="Miniature bits of mindfulness" />
+        <Project link="https://dwelling.love/" imagePath="/dwelling.png" title="Dwelling" description="A social network for your home" />
+    </div>
+</div>
+
+<style></style>
