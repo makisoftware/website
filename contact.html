@@ -1,0 +1,74 @@
+<head>
+    <title>Contact - Maki Software Company</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="isabella.otf" as="font" type="font/opentype">
+    <style>
+        @font-face {
+            font-family: 'Isabella';
+            src: url('isabella.otf') format('opentype');
+            font-display: swap;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-family: 'Isabella', serif;
+            text-align: center;
+            margin: 0;
+            color: white;
+        }
+
+        body {
+            font-family: Inter;
+            padding: 1rem;
+            background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
+            color: purple;
+            position: relative;
+            height: calc(100vh - 2rem);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            padding: 0;
+            
+            max-width: 300px;
+        }
+
+        .projects-list li {
+            margin: 1rem 0;
+            font-size: 1.2em;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            color: white;
+            text-decoration: none;
+            font-family: 'Isabella', serif;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-link">← Back</a>
+    <h1>Contact</h1>
+    <p>
+        You can email us at <a href="mailto:hey@makisoftware.com">hey@makisoftware.com</a>.
+        <br/><br/>
+        The company was founded by <a href="https://elliottetzkorn.com">Elliott Etzkorn</a>.
+        <br/><br/>
+        Work is based out of New York City.
+        <br/><br/>
+        Our address is <a href="https://maps.app.goo.gl/kWdDr7rMK24YPwSr5">440 N. Barranca Ave. #1881, Covina, CA 91723</a>.
+    </p>
+</body>
