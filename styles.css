@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Isabella';
+    src: url('isabella.otf') format('opentype');
+    font-display: swap;
+}
+
+body {
+    font-family: Inter;
+    padding: 1rem;
+    color: purple;
+    position: relative;
+    height: calc(100vh - 2rem);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Isabella', serif;
+    text-align: center;
+    margin: 0;
+}
+
+.gradient-link {
+    position: absolute;
+    font-family: 'Isabella', serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.gradient-link:hover {
+    opacity: 0.7;
+}
+
+.corner-text {
+    position: absolute;
+    padding: 1rem;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+/* Home page specific styles */
+.home {
+    background: radial-gradient(circle at center, white 0%, purple 200px, white 400px, white 100%);
+}
+
+.home h1 {
+    font-size: 2em;
+    color: purple;
+}
+
+.link-left {
+    left: calc(50% - 220px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-right {
+    right: calc(50% - 220px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Projects page specific styles */
+.projects {
+    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
+    flex-direction: column;
+}
+
+.projects h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.projects p {
+    max-width: 300px;
+    text-align: left;
+    color: purple;
+}
+
+/* Back button positioning */
+.projects .gradient-link, .contact .gradient-link {
+    left: calc(50% - 430px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Contact page specific styles */
+.contact {
+    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.contact p {
+    max-width: 300px;
+    text-align: left;
+    color: purple;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .link-left {
+        left: 50%;
+        top: calc(50% - 220px);
+        transform: translateX(-50%);
+    }
+
+    .link-right {
+        left: 50%;
+        top: calc(50% + 200px);
+        transform: translateX(-50%);
+    }
+
+    .projects .gradient-link, .contact .gradient-link {
+        left: 50%;
+        top: calc(50% - 400px);
+        transform: translateX(-50%);
+    }
+} 
