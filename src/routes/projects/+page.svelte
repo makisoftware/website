@@ -2,6 +2,10 @@
     import Project from "$lib/Project.svelte";
 </script>
 
+<svelte:head>
+    <title>Projects • Maki Software</title>
+</svelte:head>
+
 <div class="level-two-container">
     <div class="level-two-text-area">
         <h1>Projects</h1>
