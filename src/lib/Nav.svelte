@@ -4,7 +4,7 @@
   export let home: boolean;
 </script>
 
-<div class="nav-container" style="width: {home ? 440 : 820}px">
+<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 780}px">
   {#if home}
     <a href="{base}/contact">Contact</a>
     <a href="{base}/projects">Projects</a>
@@ -41,8 +41,12 @@
 
   @media (max-width: 888px) {
     .nav-container {
-      top: calc(50% - 400px);
-      transform: translateX(-50%);
+      flex-direction: column;
     }
+    /* a {
+         left: 50%;
+        top: calc(50% - 220px);
+        transform: translateX(-50%);
+    } */
   }
 </style>
