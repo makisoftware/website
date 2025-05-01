@@ -9,7 +9,7 @@
     <a href="{base}/contact">Contact</a>
     <a href="{base}/projects">Projects</a>
   {:else}
-    <a href="/">Back</a>
+    <a href="/">Home</a>
   {/if}
 </div>
 
