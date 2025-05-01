@@ -1,1 +1,0 @@
-import{t as r,a as t}from"../chunks/Djs_ETX0.js";import"../chunks/D9TfCAsz.js";import{B as m,C as s}from"../chunks/B-JmO9Xn.js";import{i as e}from"../chunks/C7jMu5n7.js";import{o as i}from"../chunks/DSpHZVj8.js";var n=r('<h1 class="svelte-1845pko">Maki<br>Software<br>Company</h1>');function v(o,a){m(a,!1),i(()=>{}),e();var p=n();t(o,p),s()}export{v as component};
