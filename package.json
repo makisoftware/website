@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"deploy": "gh-pages -d build -t"
+		"deploy": "gh-pages -d build -t",
+		"github": "npm run build && npm run deploy"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
