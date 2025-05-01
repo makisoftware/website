@@ -105,7 +105,7 @@ h1 {
 
 /* Back button positioning */
 .projects .gradient-link, .contact .gradient-link {
-    left: calc(50% - 430px);
+    left: calc(50% - 420px);
     top: 50%;
     transform: translateY(-50%);
 }
