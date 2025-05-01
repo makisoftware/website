@@ -1,3 +1,8 @@
+<script>
+
+    import { IMESSAGE_LINK } from "../../constants";
+
+</script>
 <svelte:head>
     <title>Contact • Maki Software</title>
 </svelte:head>
@@ -8,7 +13,7 @@
         <p>
             Write us at <a href="mailto:hey@makisoftware.com">hey@makisoftware.com</a>
             <br/><br/>
-            Join the iMessage <a href="">group chat</a>
+            Join the iMessage <a href={IMESSAGE_LINK}>group chat</a>
             <br/><br/>
             Reach out to <a href="https://elliottetzkorn.com">Elliott</a>
             <br/><br/>
