@@ -13,7 +13,7 @@
   @property --inner-white-stop {
     syntax: '<length>';
     inherits: false;
-    initial-value: 180px;
+    initial-value: 200px;
   }
 
   @property --purple-stop {
@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;  
+    flex-direction: column;
     height: 100%;
     width: 100%;
     background: radial-gradient(
