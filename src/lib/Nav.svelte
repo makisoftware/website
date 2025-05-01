@@ -1,11 +1,13 @@
 <script lang="ts">
+  import { base } from "$app/paths";
+
   export let home: boolean;
 </script>
 
 <div class="nav-container" style="width: {home ? 400 : 800}px">
   {#if home}
-    <a href="/contact">Contact</a>
-    <a href="/projects">Projects</a>
+    <a href="{base}/contact">Contact</a>
+    <a href="{base}/projects">Projects</a>
   {:else}
     <a href="/">Back</a>
   {/if}
