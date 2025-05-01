@@ -42,10 +42,9 @@ body {
 
 .home h1 {
     font-size: 2em;
-    color: purple;
 }
 
-.gradient-link {
+.link {
     position: absolute;
     font-family: 'Isabella', serif;
     font-size: 1.2em;
@@ -54,37 +53,8 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.gradient-link:hover {
+.link:hover {
     opacity: 0.7;
-}
-
-.corner-text {
-    position: absolute;
-    padding: 1rem;
-}
-
-.top-left {
-    top: 0;
-    left: 0;
-    text-align: left;
-}
-
-.top-right {
-    top: 0;
-    right: 0;
-    text-align: right;
-}
-
-.bottom-left {
-    bottom: 0;
-    left: 0;
-    text-align: left;
-}
-
-.bottom-right {
-    bottom: 0;
-    right: 0;
-    text-align: right;
 }
 
 .link-left {
@@ -100,51 +70,58 @@ body {
 }
 
 .back-link {
-    position: absolute;
     left: calc(50% - 422px);
     top: 50%;
     transform: translateY(-50%);
-    font-family: 'Isabella', serif;
-    font-size: 1.2em;
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
 }
 
-.back-link:hover {
-    opacity: 0.7;
-}
-
-.projects .gradient-link, .contact .gradient-link {
+.corner {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    color: purple;
+    padding: 1rem;
+}
+
+.corner-top-left {
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.corner-top-right {
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.corner-bottom-left {
+    bottom: 0;
+    left: 0;
+    text-align: left;
+}
+
+.corner-bottom-right {
+    bottom: 0;
+    right: 0;
+    text-align: right;
 }
 
 @media (max-width: 768px) {
-    .link-left {
+    .link-left, .link-right, .back-link {
         left: 50%;
-        top: calc(50% - 220px);
         transform: translateX(-50%);
+    }
+
+    .link-left, .back-link {
+        top: calc(50% - 400px);
     }
 
     .link-right {
-        left: 50%;
         top: calc(50% + 200px);
-        transform: translateX(-50%);
     }
-
-    .back-link {
-        left: 50%;
-        top: calc(50% - 400px);
-        transform: translateX(-50%);
-    }
-} 
+}
 
 @media (max-width: 888px) {
-    .projects .gradient-link,
-    .contact .gradient-link {
+    .projects .link,
+    .contact .link {
         color: white;
     }
 }
