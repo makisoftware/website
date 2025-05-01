@@ -10,7 +10,7 @@ const config = {
 		})
 	},
 	paths: {
-		base: process.env.NODE_ENV === 'production' ? '/makisoftware' : '',
+		base: process.env.NODE_ENV === 'production' ? '/website' : '',
 	}
 };
 
