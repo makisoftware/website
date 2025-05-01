@@ -4,17 +4,23 @@
     font-display: block;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Inter;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: purple;
     position: relative;
     height: calc(100vh - 2rem);
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
+    background: radial-gradient(circle at center, white , white 180px, purple 400px, white 800px, white);
 }
 
 body.home {

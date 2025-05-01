@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Isabella';
+  src: url('/isabella.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: 'Isabella', serif;
+  background-color: white; 
+  height: 100vh;
+}
+
+body {
+  color: purple;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  max-width: 300px;
+  text-align: left
+}
+
+/* Add any additional global styles here */ 
