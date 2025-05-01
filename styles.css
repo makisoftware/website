@@ -105,9 +105,10 @@ h1 {
 
 /* Back button positioning */
 .projects .gradient-link, .contact .gradient-link {
-    left: calc(50% - 420px);
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: purple;
 }
 
 /* Contact page specific styles */
@@ -140,10 +141,11 @@ h1 {
         top: calc(50% + 200px);
         transform: translateX(-50%);
     }
-
-    .projects .gradient-link, .contact .gradient-link {
-        left: 50%;
-        top: calc(50% - 400px);
-        transform: translateX(-50%);
-    }
 } 
+
+@media (max-width: 888px) {
+    .projects .gradient-link,
+    .contact .gradient-link {
+        color: white;
+    }
+}
