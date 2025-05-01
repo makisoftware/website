@@ -16,10 +16,33 @@ body {
     align-items: center;
 }
 
-h1 {
+.page {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
+}
+
+.page h1 {
     font-family: 'Isabella', serif;
+    font-size: 3em;
+    color: white;
     text-align: center;
     margin: 0;
+}
+
+.page p {
+    max-width: 300px;
+    text-align: left;
+    color: purple;
+}
+
+.home {
+    background: radial-gradient(circle at center, white 0%, purple 200px, white 400px, white 100%);
+}
+
+.home h1 {
+    font-size: 2em;
+    color: purple;
 }
 
 .gradient-link {
@@ -64,16 +87,6 @@ h1 {
     text-align: right;
 }
 
-/* Home page specific styles */
-.home {
-    background: radial-gradient(circle at center, white 0%, purple 200px, white 400px, white 100%);
-}
-
-.home h1 {
-    font-size: 2em;
-    color: purple;
-}
-
 .link-left {
     left: calc(50% - 220px);
     top: 50%;
@@ -86,24 +99,6 @@ h1 {
     transform: translateY(-50%);
 }
 
-/* Projects page specific styles */
-.projects {
-    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
-    flex-direction: column;
-}
-
-.projects h1 {
-    font-size: 3em;
-    color: white;
-}
-
-.projects p {
-    max-width: 300px;
-    text-align: left;
-    color: purple;
-}
-
-/* Back button positioning */
 .projects .gradient-link, .contact .gradient-link {
     position: absolute;
     top: 1rem;
@@ -111,24 +106,6 @@ h1 {
     color: purple;
 }
 
-/* Contact page specific styles */
-.contact {
-    background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
-    flex-direction: column;
-}
-
-.contact h1 {
-    font-size: 3em;
-    color: white;
-}
-
-.contact p {
-    max-width: 300px;
-    text-align: left;
-    color: purple;
-}
-
-/* Mobile styles */
 @media (max-width: 768px) {
     .link-left {
         left: 50%;
