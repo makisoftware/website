@@ -4,16 +4,12 @@
   export let home: boolean;
 </script>
 
-{#if !home}
-  <a class="home-link-mobile" href="/">Home</a>
-{/if}
-
-<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 780}px">
+<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 600}px">
   {#if home}
     <a href="{base}/contact">Contact</a>
     <a href="{base}/projects">Projects</a>
   {:else}
-    <a class="home-link-desktop" href="/">Home</a>
+    <a class="home-link" href="/">Home</a>
   {/if}
 </div>
 
@@ -48,16 +44,5 @@
     .nav-container {
       flex-direction: column;
     }
-
-    .home-link-mobile {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 100;
-    }
-
-    .home-link-desktop {
-      display: none;
-    } 
   }
 </style>
