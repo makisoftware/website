@@ -1,8 +1,12 @@
-<h1>Contact</h1>
-<p>
-    You can email us at <a href="mailto:hey@makisoftware.com">hey@makisoftware.com</a>.
+<div class="level-two-container">
+    <div class="level-two-text-area">
+        <h1>Contact</h1>
+        <p>
+    Write us at <a href="mailto:hey@makisoftware.com">hey@makisoftware.com</a>
     <br/><br/>
-    The company was founded by <a href="https://elliottetzkorn.com">Elliott Etzkorn</a>.
+    Reach out to <a href="https://elliottetzkorn.com">Elliott</a>
     <br/><br/>
-    Work is based out of New York City.
+    Or find us around New York City
 </p>
+    </div>
+</div>

@@ -1,8 +1,7 @@
 <script>
-
     import Project from "$lib/Project.svelte";
-
 </script>
+
 <div class="level-two-container">
     <div class="level-two-text-area">
         <h1>Projects</h1>
@@ -12,5 +11,3 @@
         <Project link="https://dwelling.love/" imagePath="/dwelling.png" title="Dwelling" description="A social network for your home" />
     </div>
 </div>
-
-<style></style>
