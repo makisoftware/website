@@ -32,6 +32,15 @@ h1 {
   overflow: auto;
 }
 
+.level-two-container::-webkit-scrollbar {
+  display: none;
+}
+
+.level-two-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .level-two-text-area {
   padding: 4rem;
 }
