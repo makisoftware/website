@@ -5,7 +5,7 @@
 </script>
 
 <div class={$page.url.pathname === '/' ? 'gradient home' : 'gradient'}>
-  <Nav width={400} />
+  <Nav home={$page.url.pathname === '/'} />
   <slot />
 </div>
 

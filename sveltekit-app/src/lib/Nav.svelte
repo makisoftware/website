@@ -1,14 +1,14 @@
 <script lang="ts">
-  export let width: number;
+  export let home: boolean;
 </script>
 
-<div class="nav-container" style="width: {width}px">
-  <a href="/contact">
-    Contact
-  </a>
-  <a href="/projects">
-    Projects
-  </a>
+<div class="nav-container" style="width: {home ? 400 : 800}px">
+  {#if home}
+    <a href="/contact">Contact</a>
+    <a href="/projects">Projects</a>
+  {:else}
+    <a href="/">Back</a>
+  {/if}
 </div>
 
 <style>
@@ -29,8 +29,6 @@
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    color: white;
-    text-decoration: none;
     transition: opacity 0.3s ease;
     text-align: center;
   }
@@ -40,18 +38,8 @@
   }
 
   @media (max-width: 888px) {
-    /* .back-link {
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-
     a {
-        top: calc(50% - 400px);
+      top: calc(50% - 400px);
     }
- 
-    /* .projects .link,
-    .contact .link {
-        color: white;
-    } */
-}
+  }
 </style>
