@@ -4,7 +4,7 @@
   export let home: boolean;
 </script>
 
-<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 600}px">
+<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 620}px">
   {#if home}
     <a href="{base}/contact">Contact</a>
     <a href="{base}/projects">Projects</a>
