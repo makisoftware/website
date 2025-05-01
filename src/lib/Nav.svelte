@@ -4,7 +4,7 @@
   export let home: boolean;
 </script>
 
-<div class="nav-container" style="width: {home ? 440 : 820}px; height: {home ? 440 : 620}px">
+<div class="nav-container" style="width: {home ? 504 : 884}px; height: {home ? 504 : 684}px">
   {#if home}
     <a href="{base}/contact">Contact</a>
     <a href="{base}/projects">Projects</a>
@@ -26,14 +26,14 @@
   }
 
   a {
+    pointer-events: auto;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     color: white;
     text-decoration: none;
     font-size: 1.2em;
     transition: opacity 0.3s ease;
     text-align: center;
-    pointer-events: auto;
   }
 
   a:hover {
