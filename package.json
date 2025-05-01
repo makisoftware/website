@@ -4,7 +4,6 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"gh-pages": "npm run build && npx gh-pages -d build",
 		"build": "vite build"
 	},
 	"devDependencies": {
