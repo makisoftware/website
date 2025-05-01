@@ -25,10 +25,13 @@ body.projects, body.contact {
     flex-direction: column;
 }
 
+h1, p {
+    color: purple;
+}
+
 h1 {
     font-family: 'Isabella', serif;
     font-size: 3em;
-    color: purple;
     text-align: center;
     margin: 0;
 }
@@ -40,7 +43,6 @@ h1 {
 p {
     max-width: 300px;
     text-align: left;
-    color: purple;
     margin: 1rem auto;
 }
 
