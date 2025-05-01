@@ -12,17 +12,20 @@ body {
     height: calc(100vh - 2rem);
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     background: radial-gradient(circle at center, white 0%, purple 400px, white 800px, white 100%);
 }
 
-.page h1 {
+body.home {
+    background: radial-gradient(circle at center, white 0%, purple 200px, white 400px, white 100%);
+}
+
+body.projects, body.contact {
+    flex-direction: column;
+}
+
+h1 {
     font-family: 'Isabella', serif;
     font-size: 3em;
     color: purple;
@@ -30,18 +33,15 @@ body {
     margin: 0;
 }
 
-.page p {
+.home h1 {
+    font-size: 2em;
+}
+
+p {
     max-width: 300px;
     text-align: left;
     color: purple;
-}
-
-.home {
-    background: radial-gradient(circle at center, white 0%, purple 200px, white 400px, white 100%);
-}
-
-.home h1 {
-    font-size: 2em;
+    margin: 1rem auto;
 }
 
 .link {
