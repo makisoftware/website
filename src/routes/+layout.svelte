@@ -4,6 +4,13 @@
   import { page } from '$app/stores';
 </script>
 
+<svelte:head>
+  <link rel="preload" as="image" href="/new.jpeg" />
+  <link rel="preload" as="image" href="/t4t.jpeg" />
+  <link rel="preload" as="image" href="/practice.jpeg" />
+  <link rel="preload" as="image" href="/dwelling.jpeg" />
+</svelte:head>
+
 <div class={$page.url.pathname === '/' ? 'gradient home' : 'gradient'}>
   <Nav home={$page.url.pathname === '/'} />
   <slot />
