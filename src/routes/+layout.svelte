@@ -61,18 +61,4 @@
     --purple-stop: 200px;
     --outer-white-stop: 400px;
   }
-
-  @media (prefers-color-scheme: dark) {
-    .gradient {
-      background: radial-gradient(
-        circle at center,
-        white,
-        white var(--inner-white-stop),
-        purple var(--purple-stop),
-        black var(--outer-white-stop),
-        black
-      );
-    }
-  }
-  
 </style>
