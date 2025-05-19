@@ -17,7 +17,7 @@
             <br/><br/>
             Reach out to <a href="https://elliottetzkorn.com">Elliott</a>
             <br/><br/>
-            Or find us around New York City
+            Or find us in the Catskills
         </p>
     </div>
 </div>
