@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <link rel="preload" as="image" href="/ping.jpeg" />
+  <link rel="preload" as="image" href="/2g.png" />
   <link rel="preload" as="image" href="/t4t.jpeg" />
   <link rel="preload" as="image" href="/practice.jpeg" />
   <link rel="preload" as="image" href="/dwelling.jpeg" />
