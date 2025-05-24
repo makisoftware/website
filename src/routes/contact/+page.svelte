@@ -15,7 +15,7 @@
             <br/><br/>
             Join the <a href={IMESSAGE_LINK}>iMessage</a> group chat
             <br/><br/>
-            Or find us in <a href="https://en.wikipedia.org/wiki/Catskill_Mountains">The Catskills</a>
+            Or find us in the <a href="https://en.wikipedia.org/wiki/Catskill_Mountains">Catskills Mountains</a>
         </p>
     </div>
 </div>
