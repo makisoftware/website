@@ -22,7 +22,7 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          repoToken: '${{ secrets.FIREBASE_DEPLOY_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MAKISOFT_WEBSITE }}' # IMPORTANT: Replace MAKISOFT_WEBSITE with your Firebase project ID if different
           channelId: live
           projectId: makisoft-website # IMPORTANT: Replace MAKISOFT_WEBSITE with your Firebase project ID
