@@ -6,6 +6,10 @@
   });
 </script>
 
+<svelte:head>
+    <title>Maki Software</title>
+</svelte:head>
+
 <h1>Maki<br/>Software<br/>Company</h1>
 
 <style>
