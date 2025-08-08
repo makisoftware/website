@@ -2,6 +2,14 @@
   import '../app.css';
   import Nav from '$lib/Nav.svelte';
   import { page } from '$app/stores';
+  
+  $: currentPath = $page.url.pathname;
+  $: gradientClass =
+    currentPath === '/'
+      ? 'gradient home'
+      : currentPath.startsWith('/projects/etzkorn-fund')
+      ? 'gradient etzkorn'
+      : 'gradient';
 </script>
 
 <svelte:head>
@@ -10,9 +18,16 @@
   <link rel="preload" as="image" href="/dwelling.jpeg" />
 </svelte:head>
 
-<div class={$page.url.pathname === '/' ? 'gradient home' : 'gradient'}>
-  <Nav home={$page.url.pathname === '/'} />
+<div class="mobile-overlay">
+  <div class="mobile-overlay-content">
+    <p>This website is optimized for large screens. Please revisit it on a desktop computer.</p>
+  </div>
+</div>
+
+<div class={'app-root ' + gradientClass}>
+  <Nav />
   <slot />
+  
 </div>
 
 <style>
@@ -59,5 +74,38 @@
     --inner-white-stop: 0px;
     --purple-stop: 200px;
     --outer-white-stop: 400px;
+  }
+
+  .etzkorn {
+    --inner-white-stop: 400px;
+    --purple-stop: 600px;
+    --outer-white-stop: 1000px;
+  }
+
+  .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: purple;
+    z-index: 9999;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .mobile-overlay-content {
+    max-width: 28rem;
+  }
+
+  /* CSS-first gating to prevent flash */
+  @media (max-width: 820px) {
+    .mobile-overlay {
+      display: flex;
+    }
+    .app-root {
+      display: none;
+    }
   }
 </style>

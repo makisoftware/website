@@ -1,14 +1,20 @@
 <script lang="ts">
+  import { base } from '$app/paths';
+
   export let imagePath: string;
   export let title: string;
   export let description: string;
   export let link: string;
+
+  $: isExternal = /^https?:\/\//i.test(link);
+  $: normalizedInternalPath = link.startsWith('/') ? link : '/' + link;
+  $: href = isExternal ? link : base + normalizedInternalPath;
 </script>
 
 <div class="project-container">
   <img src={imagePath} alt={title} />
   <div class="text-container">
-    <a href={link} class="underlined">{title}</a>
+    <a href={href} class="underlined">{title}</a>
     <p>{description}</p>
   </div>
 </div>
