@@ -21,7 +21,7 @@
         </p>
 
         <h2>Attitude</h2>
-        <p>The fund will be not be public. It will follow the attitude of <a href="https://en.wikipedia.org/wiki/Renaissance_Technologies">Renaissance Technologies</a> in that it will serve primarily as my own investment vehicle. If the approach is successful and I have confidence in the quality of the systems I may invite friends and family to invest.<br/><br/>I probably will not invest more than $40k or so of my money into the fund in the first year. This is not meant to be a get-rich-quick-scheme. Over time I will move more of my savings over, and I may ultimately move my entire savings over.</p>
+        <p>The fund will not be public. It will follow the attitude of <a href="https://en.wikipedia.org/wiki/Renaissance_Technologies">Renaissance Technologies</a> in that it will serve primarily as my own investment vehicle. If the approach is successful and I have confidence in the quality of the systems I may invite friends and family to invest.<br/><br/>I probably will not invest more than $40k or so of my money into the fund in the first year. This is not meant to be a get-rich-quick-scheme. Over time I will move more of my savings over, and I may ultimately move my entire savings over.</p>
         
         <h2>Why?</h2>
         <p>I am growing tired of consumer technology and user interfaces. I want to spend more time on hard technology.<br/><br/>I think value investing is one of the least cynical applications of AI if it means in practice separating the signal from the noise (in a very noisy society!!). Doing this work sounds fun.</p>
