@@ -29,6 +29,8 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
 
 }
 
@@ -69,7 +71,10 @@ h2 {
 }
 
 .level-three-text-area {
-  padding: 4rem;
+  padding-top: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 18rem;
 }
 
 p {
