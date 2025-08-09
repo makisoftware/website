@@ -16,19 +16,11 @@
   }
 
   $: parentLabel = parentPath === '/' ? 'Home' : titleCaseFromSegment(parentPath.split('/').filter(Boolean).slice(-1)[0] ?? '');
+
+  $: navWidthPx = depth === 1 ? 504 : depth === 2 ? 884 : 1292;
 </script>
 
-<div
-  class="nav-container"
-  style="
-    width: {
-      depth === 1
-        ? 504
-        : depth === 2
-        ? 884
-        : 1292
-    }px;"
->
+<div class="nav-container" style={`width: ${navWidthPx}px;`}>
   {#if isHome}
     <a href={base + '/contact'}>Contact</a>
     <a href={base + '/projects'}>Projects</a>

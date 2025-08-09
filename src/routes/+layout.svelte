@@ -12,11 +12,6 @@
       : 'gradient';
 </script>
 
-<svelte:head>
-  <link rel="preload" as="image" href="/t4t.jpeg" />
-  <link rel="preload" as="image" href="/practice.jpeg" />
-  <link rel="preload" as="image" href="/dwelling.jpeg" />
-</svelte:head>
 
 <div class="mobile-overlay">
   <div class="mobile-overlay-content">
@@ -82,30 +77,4 @@
     --outer-white-stop: 1000px;
   }
 
-  .mobile-overlay {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: purple;
-    z-index: 9999;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .mobile-overlay-content {
-    max-width: 28rem;
-  }
-
-  /* CSS-first gating to prevent flash */
-  @media (max-width: 820px) {
-    .mobile-overlay {
-      display: flex;
-    }
-    .app-root {
-      display: none;
-    }
-  }
 </style>
