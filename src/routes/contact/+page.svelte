@@ -10,7 +10,7 @@
             <br/><br/>
             Join the <a href="https://buttondown.com/makisoft">mailing list</a>
             <br/><br/>
-            Or find us in the <a href="https://en.wikipedia.org/wiki/Catskill_Mountains">Catskill Mountains</a>
+            Or find us in the <a href="https://en.wikipedia.org/wiki/New_York_City">New York City</a>
         </p>
     </div>
 </div>
