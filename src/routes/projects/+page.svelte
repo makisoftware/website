@@ -12,6 +12,6 @@
         <Project link="https://nileshaw.org/" imagePath="/blossoms.png" title="Blossoms" description="What if an app expressed optimism?" />
         <Project link="https://t4t.social" imagePath="/t4t.jpeg" title="t4t" description="Community for trans and gender-non-comforming people" />
         <Project link="https://pingpractice.org/" imagePath="/practice.jpeg" title="Ping Practice" description="Miniature bits of mindfulness" />
-        <Project link="https://dwelling.love/" imagePath="/dwelling.jpeg" title="Dwelling" description="A social network for your home" />
+        <Project link="https://dwelling.makisoftware.com/" imagePath="/dwelling.jpeg" title="Dwelling" description="A social network for your home" />
     </div>
 </div>
