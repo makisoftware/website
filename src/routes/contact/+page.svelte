@@ -6,11 +6,10 @@
     <div class="level-two-text-area">
         <h1>Contact</h1>
         <p>
-            Write us at <a href="mailto:mail@makisoftware.com"
-                >mail@makisoftware.com</a
-            >
-            <br /><br />
             Join the <a href="https://mail.makisoftware.com">mailing list</a>
+            <br /><br />
+            Write us at
+            <a href="mailto:mail@makisoftware.com">mail@makisoftware.com</a>
             <br /><br />
             Or find us in
             <a href="https://wikipedia.org/wiki/New_York_City">New York City</a>
