@@ -13,7 +13,7 @@
             link="https://areyouok.money/"
             imagePath="/flower.png"
             title="Are you OK?"
-            description="An intelligent platform for financial peace"
+            description="An intelligent system for financial peace"
         />
         <Project
             link="https://nileshaw.org/"
