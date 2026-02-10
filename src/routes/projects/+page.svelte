@@ -10,6 +10,12 @@
     <div class="level-two-text-area">
         <h1>Projects</h1>
         <Project
+            link="https://areyouok.money/"
+            imagePath="/flower.png"
+            title="Are you OK?"
+            description="An intelligent platform for financial peace"
+        />
+        <Project
             link="https://nileshaw.org/"
             imagePath="/blossoms.png"
             title="Blossoms"
