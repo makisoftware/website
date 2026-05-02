@@ -6,6 +6,13 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "cleanUrls": true
+    "cleanUrls": true,
+    "redirects": [
+      {
+        "source": "/capture/oauth-callback",
+        "destination": "capture://oauth-callback",
+        "type": 302
+      }
+    ]
   }
 }
