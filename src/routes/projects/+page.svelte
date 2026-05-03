@@ -13,7 +13,7 @@
             link="https://shoregen.com/"
             imagePath="/shoregen.png"
             title="ShoreGen"
-            description="Trench Shoring Intelligence in closed alpha"
+            description="Trench Shoring Intelligence (closed alpha)"
         />
         <Project
             link="https://t4t.social"
