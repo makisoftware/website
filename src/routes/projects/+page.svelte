@@ -10,6 +10,12 @@
     <div class="level-two-text-area">
         <h1>Projects</h1>
         <Project
+            link="https://shoregen.com/"
+            imagePath="/shoregen.png"
+            title="ShoreGen"
+            description="Trench Shoring Intelligence in closed alpha"
+        />
+        <Project
             link="https://t4t.social"
             imagePath="/t4t.jpeg"
             title="t4t"
