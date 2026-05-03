@@ -10,12 +10,6 @@
     <div class="level-two-text-area">
         <h1>Projects</h1>
         <Project
-            link="https://nileshaw.org/"
-            imagePath="/blossoms.png"
-            title="Blossoms"
-            description="What if an app expressed optimism?"
-        />
-        <Project
             link="https://t4t.social"
             imagePath="/t4t.jpeg"
             title="t4t"
