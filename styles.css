@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Isabella';
+  src: url('isabella.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --purple-main: purple;
+  --text-dark: #1a1a1a;
+  --text-muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0 0 4rem 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 1rem;
+}
+
+.logo-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, purple 0%, #ffffff 100%);
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: 'Isabella', Georgia, serif;
+  font-size: 2.25rem;
+  color: purple;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.category-header {
+  font-family: 'Isabella', Georgia, serif;
+  font-size: 1.15rem;
+  color: purple;
+  background-color: #f7f0fa;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.03em;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1rem;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.project-item:hover {
+  background-color: #fafafa;
+}
+
+.project-gradient {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+/* Inverted radial gradients: random colors at center to #ffffff at edge */
+.gradient-comlist {
+  background: radial-gradient(circle at center, #ff4757 0%, #ffffff 100%);
+}
+
+.gradient-aphex {
+  background: radial-gradient(circle at center, #70a1ff 0%, #ffffff 100%);
+}
+
+.gradient-t4t {
+  background: radial-gradient(circle at center, #ff6b81 0%, #ffffff 100%);
+}
+
+.gradient-dwelling {
+  background: radial-gradient(circle at center, #ffa502 0%, #ffffff 100%);
+}
+
+.gradient-blossoms {
+  background: radial-gradient(circle at center, #fd79a8 0%, #ffffff 100%);
+}
+
+.gradient-pingpractice {
+  background: radial-gradient(circle at center, #2ed573 0%, #ffffff 100%);
+}
+
+.gradient-contact {
+  background: radial-gradient(circle at center, #9c27b0 0%, #ffffff 100%);
+}
+
+.gradient-location {
+  background: radial-gradient(circle at center, #00b894 0%, #ffffff 100%);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.project-title {
+  font-family: 'Isabella', Georgia, serif;
+  font-size: 1.35rem;
+  color: #222222;
+}
+
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
