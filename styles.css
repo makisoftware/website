@@ -60,7 +60,7 @@ body {
 .subtitle {
   font-size: 0.95rem;
   color: var(--text-muted);
-  margin-top: 0.25rem;
+  margin-top: 0;
 }
 
 .projects-list {
