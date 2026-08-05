@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "maki-software",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

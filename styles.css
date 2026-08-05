@@ -45,7 +45,6 @@ body {
   height: 64px;
   border-radius: 50%;
   background: radial-gradient(circle at center, purple 0%, #ffffff 100%);
-  border: 1px solid #f0f0f0;
   flex-shrink: 0;
 }
 
@@ -88,6 +87,10 @@ body {
   color: var(--text-dark);
 }
 
+.project-item + .project-item {
+  border-top: 1px solid #eeeeee;
+}
+
 .project-item:hover {
   background-color: #fafafa;
 }
@@ -96,21 +99,20 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #f0f0f0;
   flex-shrink: 0;
 }
 
 /* Inverted radial gradients: random colors at center to #ffffff at edge */
 .gradient-comlist {
-  background: radial-gradient(circle at center, #ff4757 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, forestgreen 0%, #ffffff 100%);
 }
 
 .gradient-aphex {
-  background: radial-gradient(circle at center, #70a1ff 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, #000000 0%, #ffffff 100%);
 }
 
 .gradient-t4t {
-  background: radial-gradient(circle at center, #ff6b81 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, #5BCEFA 0%, #ffffff 33%, #F5A9B8 66%, #ffffff 100%);
 }
 
 .gradient-dwelling {
@@ -122,15 +124,15 @@ body {
 }
 
 .gradient-pingpractice {
-  background: radial-gradient(circle at center, #2ed573 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, silver 0%, #ffffff 100%);
 }
 
 .gradient-contact {
-  background: radial-gradient(circle at center, #9c27b0 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, purple 0%, #ffffff 100%);
 }
 
 .gradient-location {
-  background: radial-gradient(circle at center, #00b894 0%, #ffffff 100%);
+  background: radial-gradient(circle at center, purple 0%, #ffffff 100%);
 }
 
 .project-info {
