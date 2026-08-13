@@ -102,7 +102,21 @@ body {
   flex-shrink: 0;
 }
 
+.project-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  -webkit-mask-image: radial-gradient(circle, #000 50%, transparent 100%);
+  mask-image: radial-gradient(circle, #000 50%, transparent 100%);
+}
+
 /* Inverted radial gradients: random colors at center to #ffffff at edge */
+.gradient-wikifm {
+  background: radial-gradient(circle at center, #0732E0 0%, #ffffff 100%);
+}
+
 .gradient-comlist {
   background: radial-gradient(circle at center, forestgreen 0%, #ffffff 100%);
 }
