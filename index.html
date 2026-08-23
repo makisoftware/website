@@ -20,7 +20,7 @@
   <main class="projects-list">
     <div class="category-header">Internal</div>
 
-    <a href="#wikifm" id="wikifm-cell" class="project-item" onclick="openWikiFMDialog(event); return false;">
+    <a href="#wikifm" id="wikifm-cell" class="project-item" onclick="openDialog('wikifm-dialog', event); return false;">
       <img src="wikifm.jpg" alt="WikiFM" class="project-image">
       <div class="project-info">
         <span class="project-title">WikiFM</span>
@@ -44,7 +44,7 @@
       </div>
     </a>
 
-    <a href="https://t4t.social" class="project-item">
+    <a href="#t4t" id="t4t-cell" class="project-item" onclick="openDialog('t4t-dialog', event); return false;">
       <div class="project-gradient gradient-t4t"></div>
       <div class="project-info">
         <span class="project-title">t4t</span>
@@ -110,26 +110,37 @@
     </div>
   </dialog>
 
+  <dialog id="t4t-dialog" tabindex="-1">
+    <div class="dialog-content">
+      <h2 class="dialog-title">Which platform would you like to use?</h2>
+      <div class="dialog-options">
+        <a href="https://apps.apple.com/us/app/t4t/id6474363537" class="dialog-option">iOS</a>
+        <a href="https://play.google.com/store/apps/details?id=com.t4t.app" class="dialog-option">Android</a>
+      </div>
+      <form method="dialog" class="dialog-cancel-form">
+        <button type="submit" class="dialog-cancel-btn">Cancel</button>
+      </form>
+    </div>
+  </dialog>
+
   <script>
-    const dialog = document.getElementById('wikifm-dialog');
-    const wikifmCell = document.getElementById('wikifm-cell');
-
-    function openWikiFMDialog(e) {
+    function openDialog(dialogId, e) {
       if (e) e.preventDefault();
-      dialog.showModal();
-      if (document.activeElement && document.activeElement !== dialog) {
-        document.activeElement.blur();
+      const dialog = document.getElementById(dialogId);
+      if (dialog) {
+        dialog.showModal();
+        if (document.activeElement && document.activeElement !== dialog) {
+          document.activeElement.blur();
+        }
       }
     }
 
-    if (wikifmCell) {
-      wikifmCell.onclick = openWikiFMDialog;
-    }
-
-    dialog.addEventListener('click', (event) => {
-      if (event.target === dialog) {
-        dialog.close();
-      }
+    document.querySelectorAll('dialog').forEach((dialog) => {
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) {
+          dialog.close();
+        }
+      });
     });
   </script>
 </body>
