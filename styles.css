@@ -230,7 +230,6 @@ dialog::backdrop {
   border-radius: 10px;
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
 .dialog-option:focus,
@@ -240,10 +239,6 @@ dialog::backdrop {
 
 .dialog-option:hover {
   background-color: #eee0f5;
-}
-
-.dialog-option:active {
-  transform: scale(0.98);
 }
 
 .dialog-cancel-form {
@@ -262,7 +257,6 @@ dialog::backdrop {
   border-radius: 8px;
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  transition: color 0.15s ease, background-color 0.15s ease;
 }
 
 .dialog-cancel-btn:focus,
