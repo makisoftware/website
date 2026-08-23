@@ -233,13 +233,9 @@ dialog::backdrop {
   transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
-.dialog-option:focus {
-  outline: none;
-}
-
+.dialog-option:focus,
 .dialog-option:focus-visible {
-  outline: 2px solid purple;
-  outline-offset: 2px;
+  outline: none;
 }
 
 .dialog-option:hover {
@@ -269,13 +265,9 @@ dialog::backdrop {
   transition: color 0.15s ease, background-color 0.15s ease;
 }
 
-.dialog-cancel-btn:focus {
-  outline: none;
-}
-
+.dialog-cancel-btn:focus,
 .dialog-cancel-btn:focus-visible {
-  outline: 2px solid var(--text-muted);
-  outline-offset: 2px;
+  outline: none;
 }
 
 .dialog-cancel-btn:hover {

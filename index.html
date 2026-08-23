@@ -20,7 +20,7 @@
   <main class="projects-list">
     <div class="category-header">Internal</div>
 
-    <a href="#wikifm" id="wikifm-cell" class="project-item" onclick="document.getElementById('wikifm-dialog').showModal(); return false;">
+    <a href="#wikifm" id="wikifm-cell" class="project-item" onclick="openWikiFMDialog(event); return false;">
       <img src="wikifm.jpg" alt="WikiFM" class="project-image">
       <div class="project-info">
         <span class="project-title">WikiFM</span>
@@ -112,6 +112,20 @@
 
   <script>
     const dialog = document.getElementById('wikifm-dialog');
+    const wikifmCell = document.getElementById('wikifm-cell');
+
+    function openWikiFMDialog(e) {
+      if (e) e.preventDefault();
+      dialog.showModal();
+      if (document.activeElement && document.activeElement !== dialog) {
+        document.activeElement.blur();
+      }
+    }
+
+    if (wikifmCell) {
+      wikifmCell.onclick = openWikiFMDialog;
+    }
+
     dialog.addEventListener('click', (event) => {
       if (event.target === dialog) {
         dialog.close();
