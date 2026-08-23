@@ -20,7 +20,7 @@
   <main class="projects-list">
     <div class="category-header">Internal</div>
 
-    <a href="https://apps.apple.com/us/app/wikifm-encyclopedia-radio/id6800855289" class="project-item">
+    <a href="#wikifm" id="wikifm-cell" class="project-item" onclick="document.getElementById('wikifm-dialog').showModal(); return false;">
       <img src="wikifm.jpg" alt="WikiFM" class="project-image">
       <div class="project-info">
         <span class="project-title">WikiFM</span>
@@ -96,5 +96,27 @@
       </div>
     </a>
   </main>
+
+  <dialog id="wikifm-dialog">
+    <div class="dialog-content">
+      <h2 class="dialog-title">Which platform would you like to use?</h2>
+      <div class="dialog-options">
+        <a href="https://apps.apple.com/us/app/wikifm-encyclopedia-radio/id6800855289" class="dialog-option">iOS</a>
+        <a href="https://play.google.com/store/apps/details?id=com.makisoftware.wikifm" class="dialog-option">Android</a>
+      </div>
+      <form method="dialog" class="dialog-cancel-form">
+        <button type="submit" class="dialog-cancel-btn">Cancel</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('wikifm-dialog');
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+  </script>
 </body>
 </html>
