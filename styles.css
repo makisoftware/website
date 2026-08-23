@@ -179,6 +179,11 @@ dialog {
   max-width: min(90vw, 340px);
   width: 100%;
   margin: auto;
+  outline: none;
+}
+
+dialog:focus {
+  outline: none;
 }
 
 dialog::backdrop {
@@ -223,7 +228,18 @@ dialog::backdrop {
   font-size: 1rem;
   text-decoration: none;
   border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.dialog-option:focus {
+  outline: none;
+}
+
+.dialog-option:focus-visible {
+  outline: 2px solid purple;
+  outline-offset: 2px;
 }
 
 .dialog-option:hover {
@@ -248,11 +264,23 @@ dialog::backdrop {
   font-size: 0.9rem;
   cursor: pointer;
   border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.dialog-cancel-btn:focus {
+  outline: none;
+}
+
+.dialog-cancel-btn:focus-visible {
+  outline: 2px solid var(--text-muted);
+  outline-offset: 2px;
 }
 
 .dialog-cancel-btn:hover {
   color: var(--text-dark);
   background-color: #f5f5f5;
 }
+
 
