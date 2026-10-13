@@ -113,10 +113,6 @@ body {
 }
 
 /* Inverted radial gradients: random colors at center to #ffffff at edge */
-.gradient-shoregen {
-  background: radial-gradient(circle at center, #FE9A00 0%, #ffffff 100%);
-}
-
 .gradient-wikifm {
   background: radial-gradient(circle at center, #0732E0 0%, #ffffff 100%);
 }
@@ -135,6 +131,10 @@ body {
 
 .gradient-dwelling {
   background: radial-gradient(circle at center, #ffa502 0%, #ffffff 100%);
+}
+
+.gradient-shoregen {
+  background: radial-gradient(circle at center, #FE9A00 0%, #ffffff 100%);
 }
 
 .gradient-blossoms {
